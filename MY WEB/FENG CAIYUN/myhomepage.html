@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5dc; /* 米黄色背景 */
+            color: #333;
+        }
+
+        header {
+            background-color: #333333; /* 导航栏背景色 */
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+
+        #profile-image {
+            width: 150px; /* 固定照片宽度 */
+            height: 150px; /* 固定照片高度 */
+            max-width: 100%;
+            border-radius: 50%;
+            object-fit: cover; /* 控制图片显示方式 */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555; /* 导航栏背景色 */
+            position: absolute;
+            width: 100%;
+            top: 180px; /* 调整导航栏位置 */
+            z-index: 1;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #777; /* 导航栏鼠标悬停时的背景色 */
+        }
+
+        hr {
+            border: 1px solid black;
+            margin: 20px 0;
+        }
+
+        .page-content {
+            display: none; /* 隐藏所有页面内容 */
+        }
+
+        #personal-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* 纵向居中对齐 */
+            margin-left: 200px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        #personal-info img {
+            width: 200px; /* 固定照片宽度 */
+            height: 200px; /* 固定照片高度 */
+            max-width: 100%;
+            border-radius: 10px; /* 设置为方形的边角 */
+            object-fit: cover; /* 控制图片显示方式 */
+        }
+
+        #personal-details {
+            max-width: 200%;
+            margin-right: 200px; /* 调整 personal-details 左边距 */
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img id="profile-image" src="homepage.jpg" alt="Your Square Image">
+        <h1 id="page-title">homePage</h1>
+        <nav>
+            <a href="#" onclick="showPage('home')">HomePage</a>
+            <a href="#" onclick="showPage('abilities')">Personal capacity</a>
+            <a href="#" onclick="showPage('education')">Education</a>
+            <a href="#" onclick="showPage('hobbies')">Hobbies</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div id="home" class="page-content">
+        <div id="personal-info">
+            <img src="homepage.jpg" alt="Your Square Image">
+            <div id="personal-details">
+                <p><strong>Name:</strong> <em>Feng Caiyun</em></p>
+                <p><strong>Age:</strong> 20</p>
+                <p><strong>School:</strong> Scotland Academy, Wuxi Taihu University, Jiangsu province, China</p>
+                <p><strong>Email:</strong> 3491926590@qq.com</p>
+                <p><strong>Hobbies:</strong> Loves to play piano, play basketball, and watch movies.  </p>
+                <p><strong>Motto:</strong> What doesn't kill me makes me stronger.</p>
+            </div>
+        </div>
+       
+        
+        
+    </div>
+
+    <!-- 添加以下部分，直接显示图片和信息 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 显示当前页面内容
+            var homePage = document.getElementById('home');
+            homePage.style.display = 'block';
+
+            // 更新页面标题
+            var pageTitle = document.getElementById('page-title');
+            pageTitle.innerText = '主页';
+        });
+    </script>
+
+    <div id="abilities" class="page-content">
+        <h2>Personal capacity</h2>
+        <ul>
+            <li><strong>Your Programming Languages:</strong> python /Java/css</li>
+            <li><strong>Your Skills:</strong>proficiency in word and excel
+                Python ,java Script, HTML, css,
+                Engineering Management
+                web development
+                Software Design Development
+                English
+                 </li>
+            <li><strong>Your Project Experience:</strong>Become a Team Leader Design Software Hi-Buy </li>
+            
+            <hr>
+            <li><strong><em>I am pertinent, pragmatic, and diligent, with a positive and enthusiastic attitude.
+                I am optimistic and possess a certain degree of organizational and innovative
+                spirit. I exhibit a strong sense of teamwork and leadership, and I am a
+                perfectionist who is thoughtful, careful, cautious, and methodical. I have
+                developed my own unique insights and am capable of independently completing
+                various tasks within my area of competence. I have been recognized with schoollevel awards, such as the First Prize in the School Level of the Wordsmith
+                Competition. Additionally, I have successfully passed four or six levels of
+                university English exams and received corresponding prize money</em></strong></li>
+                
+        </ul>
+    </div>
+    
+
+
+    <div id="education" class="page-content">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Degree:</strong> <font color：#FFOOOO）>Bachelor of Engineering</font></li>
+            <li><strong>Major:</strong> Computer Science & Technology</li>
+            <li><strong>graduate school:</strong> not yet graduated</li>
+        </ul>
+        <hr>
+          <center><img src="scotland.jpeg"alt="img" width="401" height="301"></center>
+          <strong><hr/> </strong>
+          <center><img src="wuxitaihuxueyuan.jpeg" alt="img"width="402"height="302" ></center>
+          <strong><hr/> </strong>
+          <center><img src="sugelan.jpeg" alt="img"width="402"height="302" ></center>
+          <strong><hr/> </strong>
+    </div>
+    <footer>
+        ♱⋰ ⋱✮⋰ ⋱♱⋰ ⋱✮⋰ ⋱♱⋰ ⋱✮⋰ ⋱♱⋰⋱♱⋰ ⋱✮⋰ ⋱♱⋰ ⋱✮⋰ ⋱♱⋰ ⋱✮⋰ ⋱♱⋰⋱♱⋰ ⋱✮⋰ ⋱♱⋰ ⋱✮⋰ ⋱♱⋰ ⋱✮⋰ ⋱♱⋰⋱♱⋰ ⋱✮⋰ ⋱♱⋰ ⋱✮⋰ ⋱♱⋰ ⋱✮⋰ ⋱♱⋰⋱
+    </footer>
+
+    <center id="hobbies" class="page-content">
+        <h2>Hobby</h2>
+        <p><strong><em>Hobbies are like a rope that pulls you and makes you struggle; hobbies are like a needle and thread that guides you and makes you work hard; hobbies are like a ray of sunshine that shines on you and makes you chase; and hobbies are like a ray of warmth that seduces you and makes you fight.
+            When I think of hobbies, I think of myself. When I was a child, I always thought that my hobby was watching cartoons, and now when I think back, I occasionally feel that I was too childish at that time. Because watching TV can not be regarded as a hobby, perhaps that only counts as a kind of leisure time relaxation.
+            I like to listen to music, along with the beautiful rhythm, I can not help but follow the hum a few lines, so to speak, my hobby is singing. Music can make people outside, intoxicated, the rising and falling melody always let me forget everything, immersed in this dream-like melody.
+            I don't know why, but gentle music will always make me very relaxed; heavy music will always make me very dull; passionate music will always make me very enthusiastic; angry music will always make me very angry. Is this what people often call the feelings of the heart? I love to sing, because I can experience music from singing, and I can understand myself from music. Singing is my favorite because it relieves my worries and helps me to share my pain!
+            Hobby in life is an embellishment, then singing in my life is one of the most glossy, the most brilliant embellishment of the hobby embellished my life, so that I am full of dreams for the future, full of expectations!</em></strong></p>
+        
+        <hr/>
+        <hr/>
+        
+            <img src="DISNEY.jpg" alt="img" width="601px" height="338px">
+        <p><strong><em> I really enjoy going to such a childlike and beautiful place to play, and I feel like the whole person is very relaxed！</em></strong></p>
+
+        <hr/>
+        <hr/>
+        
+        <img src="mountain.jpg"alt="img" width="300px"height="440px" >
+        
+      
+        <p><strong><em>Climbing to see sunrise~</em></strong></p>
+        <hr/>
+        <hr/>
+        <img src="sea.jpg" alt="img" width="300"height="400">
+        <p><strong><em>Looking up at the blue sky and gazing into the boundless sea, one cannot distinguish between the ends of the earth and the cape, a completely blue world. Crowds of seagulls chase after waves of spray, while other fishing boats also carry hardworking fishermen casting nets in the distance to catch fish.</em></strong></p>
+        <hr/>
+        <hr/>
+        <img src="dog.jpg" alt="img" width="300"height="410"> 
+        <p><strong><em>I like my dog because it has strong hair, so I call it "Bubble"ʕ ⸝⸝⸝⁰⃚⃙̴ ༝ ⁰⃚⃙̴ ʔ ♡ </em></strong></p>
+        <hr/>
+        <hr/>
+        <img src=clothes.jpg  alt="img" width="300"height="400"> 
+        <p><strong><em>I like the clothing of the Miao ethnic group in China and feel like it's worth looking at꒰⑅°͈꒳​°͈꒱･*♡♡♡</em></strong></p>
+        <hr/>
+        <hr/>
+
+
+
+        </div>
+    <footer>
+        Welcome to my homepage!
+    </footer>
+
+
+    <script>
+        function showPage(pageId) {
+            // 隐藏所有页面内容
+            var pages = document.querySelectorAll('.page-content');
+            pages.forEach(function(page) {
+                page.style.display = 'none';
+            });
+
+            // 显示当前页面内容
+            var currentPage = document.getElementById(pageId);
+            currentPage.style.display = 'block';
+
+            // 更新页面标题
+            var pageTitle = document.getElementById('page-title');
+            pageTitle.innerText = (pageId === 'home') ? '主页' : pageId;
+        }
+    </script>
+
+</body>
+</html>
